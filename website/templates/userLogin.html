@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %} Login {% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <div class="d-flex my-5 flex-column align-items-center">
+        <h1 class="fw-bolder "> LOGIN </h1>
+        <form action="" method="POST">
+            {% csrf_token %}
+            <input class="form-control fs-4 my-3" type="text" name="username" placeholder="Username">
+            <input class="form-control fs-4 my-3" type="password" name="password" placeholder="Password">
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input">
+                <label class="form-check-label">Remember Me</label>
+            </div>
+            <div class="d-flex justify-content-center">
+                <button class="btn btn-success fs-5">Login</button>
+            </div>
+        </form>
+        <br>
+        <span class="fs-5">New User?: <a href="{% url 'user_signup' %}">SignUp</a></span>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+
+{% if user.is_authenticated %}
+    <h1>This is Cart</h1>
+
+{% else %}
+    <p class="fs-1">You're not logged in..., <a href="{% url 'user_login' %}">Click Here to Login</a></p>
+{% endif %}
+
+{% endblock %}

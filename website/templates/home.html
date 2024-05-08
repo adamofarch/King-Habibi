@@ -1,0 +1,286 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} HOME {% endblock %}
+
+{% block content %}
+
+<style>
+    .checkout-but {
+        background: white;
+        font-size: larger;
+        margin-top: 10%;
+    }
+    .checkout-but:hover {
+        background: #000;
+        color: white;
+    }
+    .solid-gold-but {
+        background-color: whitesmoke;
+        color: #000;
+    }
+    .solid-gold-but:hover {
+        background-color: grey;
+        color: white;
+    }
+    .but {
+        background-color: whitesmoke;
+        color: #000;
+    }
+    .but:hover {
+        background-color: grey;
+        color: white;
+    }
+    .collection-but {
+        background-color: whitesmoke;
+        color: #000;
+    }
+    .collection-but:hover {
+        background-color: black;
+        color: whitesmoke;
+    }
+</style>
+
+<div class="container-fluid" style="background-color: #d10101;">
+    <div class="row">
+        <div class="col d-flex flex-column align-items-center text-div text-center py-5">
+            <h1 class="featured text-white" style="font-size: 600%; font-weight: 900;">FEATURED</h1>
+            <h1 class="text-white fw-bolder" style="font-size: 600%;">20%OFF</h1>
+            <div class="bg-secondary md-5 text-white text-center" style="font-size: 360%; width:60%;">
+                USE CODE FD20
+            </div>
+            <div class="d-flex justify-content-center">
+                <img class="mt-4 img-fluid" src="{% static 'img/free.png' %}" alt="">
+            </div>
+            <a href="">
+                <button class="checkout-but border-0 px-5 py-2">
+                    CHECK IT OUT
+                </button>
+            </a>
+        </div>
+        <div class="col">
+            <img class="h-100 w-100 me-0 img-fluid" src="{% static 'img/nigga.png' %}" alt="">
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<div class="container-fluid">
+    <h1 class="text-center fw-bolder my-5" style="font-size: 40px;">SHOP COLLECTIONS</h1>
+    <div class="row">
+        <div class="col">
+            <a class="text-decoration-none" href="">
+                <img class="h-auto w-100" src="{% static 'img/necklaces.png' %}" alt="">
+                <h4 class="text-center mt-4 text-black">NECKLACES</h4>
+            </a>
+        </div>
+        <div class="col">
+            <a class="text-decoration-none" href="">
+                <img class="h-auto w-100" src="{% static 'img/pendants.png' %}" alt="">
+                <h4 class="text-center mt-4 text-black">PENDANTS</h4>
+            </a>
+        </div>
+        <div class="col">
+            <a class="text-decoration-none" href="">
+                <img class="h-auto w-100" src="{% static 'img/watches.png' %}" alt="">
+                <h4 class="text-center mt-4 text-black">WATCHES</h4>
+            </a>
+        </div>
+        <div class="col">
+            <a class="text-decoration-none" href="">
+                <img class="h-auto w-100" src="{% static 'img/grillz.png' %}" alt="">
+                <h4 class="text-center mt-4 text-black">GRILLZ</h4>
+            </a>
+        </div>
+        <div class="col">
+            <a class="text-decoration-none" href="">
+                <img class="h-auto w-100" src="{% static 'img/women-necklaces.png' %}" alt="">
+                <h4 class="text-center mt-4 text-black">WOMEN NECKLACES</h4>
+            </a>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<div class="container-fluid">
+    <h1 class="text-center fw-bolder my-5" style="font-size: 40px;">TOP PRODUCTS</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <a class="text-decoration-none" href="">
+                    <img class="h-auto w-100" src="{% static 'img/james.png' %}" alt="">
+                    <p class="text-start fs-5 mt-3 text-black">Luxury Designer Pendant James KING 23 LAKERS LA</p>
+                </a>
+                <span class="fs-2">$350</span>
+            </div>
+            <div class="col">
+                <a class="text-decoration-none" href="">
+                    <img class="h-auto w-100" src="{% static 'img/custom-order.png' %}" alt="">
+                    <p class="text-start fs-5 mt-3 text-black">Custom Order FCB</p>
+                </a>
+                <span class="fs-2">$299</span>
+            </div>
+            <div class="col">
+                <a class="text-decoration-none" href="">
+                    <img class="h-auto w-100" src="{% static 'img/chain-necklace.png' %}" alt="">
+                    <p class="text-start fs-5 mt-3 text-black">Chain Necklaces, Necklaces Marquise eye charm</p>
+                </a>
+                <span class="fs-2">$399</span>
+            </div>
+            <div class="col">
+                <a class="text-decoration-none" href="">
+                    <img class="h-auto w-100" src="{% static 'img/butterfly-chain-necklace.png' %}" alt="">
+                    <p class="text-start fs-5 mt-3 text-black">Chain Necklaces</p>
+                </a>
+                <span class="fs-2">$999</span>
+            </div>
+            <div class="col">
+                <a class="text-decoration-none" href="">
+                    <img class="h-auto w-100" src="{% static 'img/watch.png' %}" alt="">
+                    <p class="text-start fs-5 mt-3 text-black">High Quality Nautilus Watch</p>
+                </a>
+                <span class="fs-2">$1199</span>
+            </div>
+            <div class="col">
+                <a class="text-decoration-none" href="">
+                    <img class="h-auto w-100" src="{% static 'img/panda-pendant.png' %}" alt="">
+                    <p class="text-start fs-5 mt-3 text-black">Luxury Hip Hop Dancing Funny Panda Pendant</p>
+                </a>
+                <span class="fs-2">$229</span>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center mt-5">
+            <a class="text-decoration-none" href="">
+                <button class="collection-but fs-3 text-center fw-bolder border-2 border-dark px-5 py-3 ms-5">
+                    SHOP TOP PRODUCTS
+                </button>
+            </a>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<div class="d-flex">
+    <div class="col-6">
+        <img class="h-100 w-100 img-fluid" src="{% static 'img/nigga2.png' %}" alt="">
+    </div>
+    <div class="col-6 bg-black">
+        <div class="d-flex justify-content-center align-items-center"></div>
+            <h1 class="text-center" style="color: #ffff62; font-size: 80px; font-weight: 900; margin-top: 150px">SOLID GOLD COLLECTION</h1>
+            <a href="">
+                <button class="solid-gold-but fs-3 fw-bolder py-2 px-5 mt-2 border-0" style="margin-left: 35%;">CHECK IT OUT</button>
+            </a>
+    </div>
+</div>
+<br>
+<br>
+<div class="container-fluid">
+    <h1 class="text-center fw-bolder my-5" style="font-size: 40px;">PENDANTS</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <a class="text-decoration-none" href="">
+                    <img class="h-auto w-100" src="{% static 'img/goat-pendant.png' %}" alt="">
+                    <p class="text-start fs-5 mt-3 text-black">Luxury Designer Golden Goat Pendant</p>
+                </a>
+                <span class="fs-2">$350</span>
+            </div>
+            <div class="col">
+                <a class="text-decoration-none" href="">
+                    <img class="h-auto w-100" src="{% static 'img/savage-pendant.png' %}" alt="">
+                    <p class="text-start fs-5 mt-3 text-black">Limited Time Edition Savage Pendant</p>
+                </a>
+                <span class="fs-2">$299</span>
+            </div>
+            <div class="col">
+                <a class="text-decoration-none" href="">
+                    <img class="h-auto w-100" src="{% static 'img/mbm-pendant.png' %}" alt="">
+                    <p class="text-start fs-5 mt-3 text-black">MBM Pendant with golden chain</p>
+                </a>
+                <span class="fs-2">$399</span>
+            </div>
+            <div class="col">
+                <a class="text-decoration-none" href="">
+                    <img class="h-auto w-100" src="{% static 'img/panda-pendant2.png' %}" alt="">
+                    <p class="text-start fs-5 mt-3 text-black">Funny Panda Pendant</p>
+                </a>
+                <span class="fs-2">$999</span>
+            </div>
+            <div class="col">
+                <a class="text-decoration-none" href="">
+                    <img class="h-auto w-100" src="{% static 'img/fresh-pendant.png' %}" alt="">
+                    <p class="text-start fs-5 mt-3 text-black">Fresh Letters Engraved Pendant</p>
+                </a>
+                <span class="fs-2">$1199</span>
+            </div>
+            <div class="col">
+                <a class="text-decoration-none" href="">
+                    <img class="h-auto w-100" src="{% static 'img/bread-pendant.png' %}" alt="">
+                    <p class="text-start fs-5 mt-3 text-black">Bread Pendant</p>
+                </a>
+                <span class="fs-2">$229</span>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<div class="row">
+    <div class="position-relative d-flex flex-row">
+        <img class="h-100 w-100 img-f   luid" src="{% static 'img/nigga-back.png' %}" alt="">
+        <div class="position-absolute d-flex flex-column align-items-start justify-content-start" style="bottom: 10%; left: 5%;">
+            <h1 class="text-white" style="font-size: 400%; font-weight:900">CHAINS FOR MEN</h1>
+            <form action="">
+                <button class="but px-5 py-3 fs-3 fw-bold border-0">CHECK IT OUT</button>
+            </form>
+        </div>
+        <img class="h-100 w-100 img-fluid" src="{% static 'img/boobie-right.png' %}" alt="">
+        <div class="position-absolute d-flex flex-column align-items-end justify-content-end" style="bottom: 10%; right: 5%;">
+            <h1 class="text-white" style="font-size: 400%; font-weight:900">CHAINS FOR WOMEN</h1>
+            <form action="">
+                <button class="but px-5 py-3 fs-3 fw-bold border-0">CHECK IT OUT</button>
+            </form>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<div class="container-fluid">
+    <h1 class="text-center mt-4 fw-bolder" style="font-size: 300%;">WATCHES</h1>
+    <p class="text-center fs-5 fw-bold mb-5">High Quality Nautilus Diamond Watches, Automatic Movement <br>Water Proof Luxury watches Available in Silver/Gold/Rose Gold</p>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <img class="h-100 w-100" src="{% static 'img/watch-silver.png' %}" alt="">
+            </div>
+            <div class="col">
+                <img class="h-100 w-100" src="{% static 'img/watch-gold.png' %}" alt="">
+            </div>
+            <div class="col">
+                <img class="h-100 w-100" src="{% static 'img/watch-rosegold.png' %}" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="d-flex justify-content-center">
+        <a href="">
+            <button class="collection-but fw-bold fs-3 border-2 border-dark px-5 py-2 my-5">VIEW COLLECTION</button>
+        </a>
+    </div>
+</div>
+<br>
+<br>
+<div class="row">
+    <div class="position-relative">
+        <img class="h-100 w-100" src="{% static 'img/final-nigga.png' %}" alt="">
+        <div class="position-absolute d-flex flex-column align-items-center justify-content-center" style="top: 30%; left: 20%">
+            <h1 class="text-white fw-bold mb-4">JOIN TEAM HABIBI</h1>
+            <br>
+            <form class="d-flex flex-column" method="POST" action="">
+                <input type="email" placeholder="Enter Your Email" class="py-2 text-center fs-3 px-5 text-white bg-transparent border-light border">
+                <button class="but text-center fs-3 px-4 py-2 mt-4 fw-bold border-0">SUBMIT</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
