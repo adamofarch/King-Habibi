@@ -30,8 +30,8 @@ class signUp(UserCreationForm):
         self.fields['username'].widget.attrs['class'] = 'form-control'
         self.fields['username'].help_text = '<ul class="form-text small"><li> Username musn\'t contain any special characters</li></ul>'
 
-class submitEmail(forms.ModelForm):
-    email = forms.EmailField()
-
-    class Meta:
-        model = submittedEmails
+# class submitEmail(forms.ModelForm):
+#     email = forms.EmailField()
+#
+#     class Meta:
+#         model = submittedEmails

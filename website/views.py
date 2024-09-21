@@ -15,7 +15,7 @@ def user_login(request):
     if request.method == 'POST':
         username = request.POST['username']
         password = request.POST['password']
-        user = authenticate(request, username= username, password= password)
+        user = authenticate(request, username=username, password=password)
         if user != None:
             login(request, user)
             return redirect('home')
